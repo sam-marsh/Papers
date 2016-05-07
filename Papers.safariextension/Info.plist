@@ -53,7 +53,7 @@
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>None</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>Website</key>
