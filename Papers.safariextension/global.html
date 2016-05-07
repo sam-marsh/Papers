@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+        safari.application.addEventListener("command", onCommand, false);
+
+        function onCommand(event) {
+            if (event.command == "papers") {
+                var tab = event.target.browserWindow.activeTab;
+                event.target.browserWindow.activeTab.url = 'papers2://url/' + encodeURIComponent(tab.url) + '&title=' + encodeURIComponent(tab.title) + '&selectedText=';
+            }
+        }
+    </script>
+</body>
